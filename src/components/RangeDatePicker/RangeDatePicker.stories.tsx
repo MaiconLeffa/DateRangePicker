@@ -1,10 +1,17 @@
+import type { Meta, StoryObj } from "@storybook/react";
 import { RangeDatePicker } from ".";
 
-export default {
-  title: "DateRangePicker",
-  component: RangeDatePicker
+const meta: Meta<typeof RangeDatePicker> = {
+  title: "Components/RangeDatePicker",
+  component: RangeDatePicker,
+  tags: ["autodocs"],
+  argTypes: {},
+  decorators: []
 };
 
-export const Primary = {
+export default meta;
+type Story = StoryObj<typeof RangeDatePicker>;
+
+export const Primary: Story = {
   args: {}
 };
