@@ -1,6 +1,6 @@
 {
-  "name": "daterangepicker",
-  "version": "0.0.1",
+  "name": "maicon-leffa-date-range-picker",
+  "version": "1.0.0",
   "description": "A components to get a range between two dates using a simple and friendly ui",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -33,6 +33,10 @@
     "react-dom": "^18.2.0",
     "storybook": "^7.6.17",
     "tailwindcss": "^3.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MaiconLeffa/DateRangePicker"
   },
   "peerDependencies": {
     "react": "^18.2.0",
