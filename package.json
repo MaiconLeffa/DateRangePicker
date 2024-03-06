@@ -1,13 +1,18 @@
 {
   "name": "maicon-leffa-date-range-picker",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A components to get a range between two dates using a simple and friendly ui",
   "main": "dist/index.js",
-  "module": "dist/index.js",
+  "module": "dist/index.es.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "ds:build": "rollup -c --bundleConfigAsCjs"
   },
   "keywords": [
     "date",
@@ -41,5 +46,11 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "rollup": "^4.12.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.4.2"
   }
 }
