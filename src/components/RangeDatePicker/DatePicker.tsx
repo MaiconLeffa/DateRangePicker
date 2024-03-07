@@ -62,7 +62,7 @@ export function DatePicker({
             <a
               key={index}
               onClick={() => handleClick(day)}
-              className={`my-1 flex h-[32px] w-[calc(100%/7)] items-center justify-center text-center ${styles(
+              className={`my-1 flex h-[32px] min-w-[calc(100%/7)] w-[calc(100%/7)] items-center justify-center text-center ${styles(
                 day,
                 value.endAt
               )}`}

@@ -6,7 +6,7 @@ export function WeekDays() {
     <>
       {weekDays.map((week, index) => (
         <a
-          className="flex h-[32px] w-[calc(100%/7)] items-center justify-center text-center font-bold text-grey-500"
+          className="flex h-[32px] w-[calc(100%/7)] min-w-[calc(100%/7)] items-center justify-center text-center font-bold text-grey-500"
           key={index}
         >
           {week}
