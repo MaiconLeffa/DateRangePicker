@@ -1,19 +1,19 @@
-import { DayProps } from './types';
+import { DayProps } from "./types";
 
 export const dayVariants = {
-  isEmptyNotInRange: 'pointer-events-none text-grey-300',
-  isEmptyInRangeNotOnEdges: 'pointer-events-none text-grey-300 bg-medEdu-100',
+  isEmptyNotInRange: "pointer-events-none text-grey-300",
+  isEmptyInRangeNotOnEdges: "pointer-events-none text-grey-300 bg-gray-100",
   isEmptyInRangeOnLeftEdge:
-    'pointer-events-none text-grey-300 bg-medEdu-100 rounded-l-full',
+    "pointer-events-none text-grey-300 bg-gray-100 rounded-l-full",
   isEmptyInRangeOnRightEdge:
-    'pointer-events-none text-grey-300 bg-medEdu-100 rounded-r-full',
-  isInRangeAndNotOnEdges: 'bg-medEdu-100',
-  isInRangeAndInRightEdge: 'bg-medEdu-100 rounded-r-full',
-  isInRangeAndInLeftEdgeAndNotSelected: 'bg-medEdu-100 rounded-l-full',
+    "pointer-events-none text-grey-300 bg-gray-100 rounded-r-full",
+  isInRangeAndNotOnEdges: "bg-gray-100",
+  isInRangeAndInRightEdge: "bg-gray-100 rounded-r-full",
+  isInRangeAndInLeftEdgeAndNotSelected: "bg-gray-100 rounded-l-full",
   isEndDateAndNotSameDateAsBegin:
-    'rounded-r-full bg-gradient-to-r from-medEdu-100 to-transparent',
+    "rounded-r-full bg-gradient-to-r from-gray-100 to-transparent",
   isBeginDateAndEndDateNotNullAndDatesNotSame:
-    'rounded-l-full bg-gradient-to-l from-medEdu-100 to-transparent',
+    "rounded-l-full bg-gradient-to-l from-gray-100 to-transparent"
 };
 
 export function styles(day: DayProps, endAt?: Date | null) {
@@ -68,5 +68,5 @@ export function styles(day: DayProps, endAt?: Date | null) {
   if (isBeginSelectedDateAndEndDateNotNullAndDatesNotSame)
     return dayVariants.isBeginDateAndEndDateNotNullAndDatesNotSame;
 
-  return '';
+  return "";
 }

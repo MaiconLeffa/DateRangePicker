@@ -71,8 +71,8 @@ export function DatePicker({
                 data-selected={
                   (day.isBeginRange || day.isEndRange) && !isToday(day.fullDay)
                 }
-                className={`flex h-[32px] w-[32px] items-center justify-center rounded-full text-sm data-[selected=true]:bg-medEdu-300 data-[selected=true]:text-white-000 ${
-                  isToday(day.fullDay) && "bg-medEdu-400 text-white-000"
+                className={`flex h-[32px] w-[32px] items-center justify-center rounded-full text-sm data-[selected=true]:bg-gray-300 data-[selected=true]:text-white-000 ${
+                  isToday(day.fullDay) && "bg-gray-400 text-white-000"
                 }
                 ${
                   disableFuture && isFuture(day.fullDay)
@@ -82,7 +82,7 @@ export function DatePicker({
                                 ${
                                   !day.isEmpty &&
                                   !isToday(day.fullDay) &&
-                                  "border-medEdu-400 text-grey-500 hover:border hover:text-medEdu-400"
+                                  "border-gray-400 text-grey-500 hover:border hover:text-gray-400"
                                 }`}
               >
                 {day.day}
