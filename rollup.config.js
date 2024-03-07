@@ -6,11 +6,11 @@ const config = {
   input: "./index.tsx",
   output: [
     {
-      file: "dist/index.js",
+      file: pkg.main,
       format: "cjs"
     },
     {
-      file: "dist/index.e.js",
+      file: pkg.module,
       format: "es"
     }
   ],
