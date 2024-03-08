@@ -50,11 +50,6 @@ export function RangeDatePicker({
     }
   }
 
-  function handleFilter(value: RangeProps) {
-    firstInteraction.current = true;
-    setRange(value);
-  }
-
   function apply() {
     if (!range.endAt) {
       const _range = { ...range, endAt: range.startAt };
@@ -78,25 +73,26 @@ export function RangeDatePicker({
               className="fixed left-0 top-0 z-[100] h-screen w-screen"
               onClick={hidePicker}
             />
-            <div className="absolute top-full z-[101] overflow-hidden rounded-lg border border-grey-100 bg-white-000 p-6 shadow-lg">
+            <div className="absolute top-full z-[101] overflow-hidden rounded-lg border border-gray-100 bg-white p-6 shadow-lg">
               <DatePicker
                 value={range}
                 onSelect={handleOnSelect}
                 disableFuture={disableFuture}
               />
 
-              <hr className="my-4 border-0 border-b border-grey-100" />
+              <hr className="my-4 border-0 border-b border-gray-100" />
 
               <div className="flex gap-2">
                 <button type="submit" onClick={hidePicker}>
-                  <span>Cancelar</span>
+                  <span className="text-gray-500">Cancelar</span>
                 </button>
                 <button
                   type="submit"
                   onClick={apply}
+                  className="ml-auto"
                   disabled={checkOutOfMaxRange(range, maxRange)}
                 >
-                  <span>Aplicar</span>
+                  <span className="text-gray-500">Aplicar</span>
                 </button>
               </div>
             </div>

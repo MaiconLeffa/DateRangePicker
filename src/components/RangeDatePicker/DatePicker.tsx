@@ -47,14 +47,14 @@ export function DatePicker({
   }
 
   return (
-    <div className="bg-white">
+    <div>
       <MonthTitle
         day={currentDate}
         onNext={next}
         onPrev={prev}
         disableFuture={disableFuture}
       />
-      <hr className="my-4 w-full border-b border-t-0 border-grey-200" />
+      <hr className="my-4 w-full border-b border-t-0 border-gray-200" />
       <div className="flex">
         <div className="flex w-[269px] flex-wrap">
           <WeekDays />
@@ -82,7 +82,7 @@ export function DatePicker({
                                 ${
                                   !day.isEmpty &&
                                   !isToday(day.fullDay) &&
-                                  "border-gray-400 text-grey-500 hover:border hover:text-gray-400"
+                                  "border-gray-400 text-gray-500 hover:border hover:text-gray-400"
                                 }`}
               >
                 {day.day}

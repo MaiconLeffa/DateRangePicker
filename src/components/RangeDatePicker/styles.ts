@@ -1,12 +1,12 @@
 import { DayProps } from "./types";
 
 export const dayVariants = {
-  isEmptyNotInRange: "pointer-events-none text-grey-300",
-  isEmptyInRangeNotOnEdges: "pointer-events-none text-grey-300 bg-gray-100",
+  isEmptyNotInRange: "pointer-events-none text-gray-300",
+  isEmptyInRangeNotOnEdges: "pointer-events-none text-gray-300 bg-gray-100",
   isEmptyInRangeOnLeftEdge:
-    "pointer-events-none text-grey-300 bg-gray-100 rounded-l-full",
+    "pointer-events-none text-gray-300 bg-gray-100 rounded-l-full",
   isEmptyInRangeOnRightEdge:
-    "pointer-events-none text-grey-300 bg-gray-100 rounded-r-full",
+    "pointer-events-none text-gray-300 bg-gray-100 rounded-r-full",
   isInRangeAndNotOnEdges: "bg-gray-100",
   isInRangeAndInRightEdge: "bg-gray-100 rounded-r-full",
   isInRangeAndInLeftEdgeAndNotSelected: "bg-gray-100 rounded-l-full",

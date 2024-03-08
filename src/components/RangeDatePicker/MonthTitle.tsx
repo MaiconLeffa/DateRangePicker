@@ -11,13 +11,13 @@ export function MonthTitle({
   const _isCurrentMonth = disableFuture ? isCurrentMonth(day) : false;
 
   return (
-    <div className="bg-gray-300 mx-auto flex h-[32px] min-h-[32px] w-[185px] items-center justify-center gap-2 overflow-hidden rounded-lg bg-grey-000">
+    <div className="bg-gray-300 mx-auto flex h-[32px] min-h-[32px] w-[185px] items-center justify-center gap-2 overflow-hidden rounded-lg bg-gray-000">
       <button
         onClick={onPrev}
         type="button"
-        className="flex h-[32px] w-[32px] items-center justify-center hover:bg-grey-100"
+        className="flex h-[32px] w-[32px] items-center justify-center hover:bg-gray-100"
       ></button>
-      <p className="w-[150px] whitespace-nowrap text-center text-sm font-bold capitalize text-grey-500">
+      <p className="w-[150px] whitespace-nowrap text-center text-sm font-bold capitalize text-gray-500">
         {day.toLocaleString("pt-br", { month: "long" })} {day.getFullYear()}
       </p>
       <button
@@ -25,7 +25,7 @@ export function MonthTitle({
         data-disabled={_isCurrentMonth}
         disabled={_isCurrentMonth}
         type="button"
-        className="flex h-[32px] w-[32px] items-center justify-center hover:bg-grey-100 data-[disabled=true]:cursor-not-allowed"
+        className="flex h-[32px] w-[32px] items-center justify-center hover:bg-gray-100 data-[disabled=true]:cursor-not-allowed"
       ></button>
     </div>
   );
