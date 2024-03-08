@@ -41,8 +41,3 @@ export interface MonthTitleProps {
   onPrev: () => void;
   disableFuture?: boolean;
 }
-
-export type FiltersProps = {
-  onFilter: Dispatch<RangeProps>;
-  range: RangeProps;
-};
