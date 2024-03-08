@@ -1,6 +1,8 @@
 import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
 import pkg from "./package.json";
+import tailwindcss from "tailwindcss";
+const tailwindConfig = require("./tailwind.config.js");
 
 const config = {
   input: "./index.tsx",
@@ -26,7 +28,8 @@ const config = {
       extensions: [".css"],
       inject: {
         insertAt: "top"
-      }
+      },
+      plugins: [tailwindcss(tailwindConfig)]
     }),
     typescript({
       clean: true,
