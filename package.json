@@ -1,5 +1,5 @@
 {
-  "name": "maicon-leffa-date-range-picker",
+  "name": "@maiconleffa/date-range-picker",
   "version": "1.2.0",
   "description": "A components to get a range between two dates using a simple and friendly ui",
   "main": "dist/index.js",

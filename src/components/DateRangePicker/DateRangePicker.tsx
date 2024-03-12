@@ -5,7 +5,7 @@ import { CalendarButton } from "./Button";
 import { DatePicker } from "./DatePicker";
 import React from "react";
 
-export function RangeDatePicker({
+export function DateRangePicker({
   value = null,
   disableFuture,
   onChange,

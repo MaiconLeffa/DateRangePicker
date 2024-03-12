@@ -1,2 +1,2 @@
 import "tailwindcss/tailwind.css";
-export { RangeDatePicker } from "./src/components/RangeDatePicker";
+export { DateRangePicker } from "./src/components/DateRangePicker";
