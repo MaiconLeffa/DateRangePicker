@@ -27,3 +27,11 @@ Props
 | disableFuture | false | If true user can not selected dates after today date |
 | maxRange | 366 | The amount of days in between two dates that user can select |
 | value | null | The current value of the component |
+
+onChange
+{
+  startAt: Date Object
+  endAt:  Date Object,
+  type: "custom"
+}
+ 
