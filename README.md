@@ -2,7 +2,7 @@
 
 DateRangePicker is a simple component to get a range of dates, it return start date and end date.
 
-![Captura de Tela 2024-03-12 às 20 42 24](https://github.com/MaiconLeffa/DateRangePicker/assets/41764184/3c7864ed-bd1d-4a2b-a749-3012e514be37)
+![Captura de Tela 2024-03-13 às 21 17 08](https://github.com/MaiconLeffa/DateRangePicker/assets/41764184/84db1125-1a85-4c20-b4ef-1df0b93f42a1)
 
 ```jsx
 import { DateRangePicker } from "maicon-leffa-date-range-picker";
