@@ -15,13 +15,13 @@ export interface CalendarProps {
   value?: RangeProps | null;
   disableFuture?: boolean;
   maxRange?: number;
+  waitForApply?: boolean;
   onChange: (date: RangeProps) => void;
 }
 
 export interface RangeProps {
   startAt?: Date | null;
   endAt?: Date | null;
-  type?: "custom" | "last-week" | "last-month" | "entire-period";
 }
 
 export interface DatePickerProps {

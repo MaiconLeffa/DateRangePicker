@@ -151,10 +151,6 @@ function isSameDay(day1?: Date | null, day2?: Date | null) {
 }
 
 export function formatDate(range: RangeProps) {
-  if (range.type === "entire-period") return "Último ano";
-  if (range.type === "last-week") return "Última semana";
-  if (range.type === "last-month") return "Último mês";
-
   if (!range.startAt && !range.endAt) return "Último ano";
   if (range.startAt && !range.endAt) return "Insira a data final";
 

@@ -9,14 +9,14 @@ export function DateRangePicker({
   value = null,
   disableFuture,
   onChange,
-  maxRange = 367
+  maxRange = 367,
+  waitForApply = true
 }: CalendarProps) {
   const firstInteraction = useRef(true);
   const [showPicker, setShowPicker] = useState(false);
   const [range, setRange] = useState<RangeProps>({
     startAt: null,
-    endAt: null,
-    type: "custom"
+    endAt: null
   });
 
   useEffect(() => {
@@ -38,15 +38,21 @@ export function DateRangePicker({
   function handleOnSelect(value: Date) {
     if (firstInteraction.current) {
       firstInteraction.current = false;
-      setRange({ startAt: value, endAt: null, type: "custom" });
+      const _range = { startAt: value, endAt: null };
+      setRange(_range);
+      if (!waitForApply) onChange(_range);
     } else {
       firstInteraction.current = true;
-      setRange((prev) => {
-        if (prev.startAt && value.getTime() < prev?.startAt?.getTime()) {
-          return { startAt: value, endAt: prev?.startAt, type: "custom" };
-        }
-        return { ...prev, endAt: value, type: "custom" };
-      });
+      let _range = { ...range };
+
+      if (_range.startAt && value.getTime() < _range?.startAt?.getTime()) {
+        _range = { startAt: value, endAt: _range?.startAt };
+      } else {
+        _range = { ..._range, endAt: value };
+      }
+
+      setRange(_range);
+      if (!waitForApply) onChange(_range);
     }
   }
 
