@@ -1,3 +1,5 @@
+import { LeftIcon } from "./icons/left-chevron";
+import { RightIcon } from "./icons/right-chevron";
 import { MonthTitleProps } from "./types";
 import { isCurrentMonth } from "./utils";
 import React from "react";
@@ -16,7 +18,9 @@ export function MonthTitle({
         onClick={onPrev}
         type="button"
         className="flex h-[32px] w-[32px] items-center justify-center hover:bg-gray-100"
-      ></button>
+      >
+        <LeftIcon />
+      </button>
       <p className="w-[150px] whitespace-nowrap text-center text-sm font-bold capitalize text-gray-500">
         {day.toLocaleString("pt-br", { month: "long" })} {day.getFullYear()}
       </p>
@@ -26,7 +30,9 @@ export function MonthTitle({
         disabled={_isCurrentMonth}
         type="button"
         className="flex h-[32px] w-[32px] items-center justify-center hover:bg-gray-100 data-[disabled=true]:cursor-not-allowed"
-      ></button>
+      >
+        <RightIcon />
+      </button>
     </div>
   );
 }
