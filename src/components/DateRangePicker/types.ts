@@ -16,6 +16,8 @@ export interface CalendarProps {
   disableFuture?: boolean;
   maxRange?: number;
   waitForApply?: boolean;
+  cancelButton?: string;
+  applyButton?: string;
   onChange: (date: RangeProps) => void;
 }
 

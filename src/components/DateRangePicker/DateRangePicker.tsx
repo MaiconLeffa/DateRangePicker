@@ -10,7 +10,9 @@ export function DateRangePicker({
   disableFuture,
   onChange,
   maxRange = 367,
-  waitForApply = true
+  waitForApply = true,
+  cancelButton = "Cancel",
+  applyButton = "Apply"
 }: CalendarProps) {
   const firstInteraction = useRef(true);
   const [showPicker, setShowPicker] = useState(false);
@@ -90,7 +92,7 @@ export function DateRangePicker({
 
               <div className="flex gap-2">
                 <button type="submit" onClick={hidePicker}>
-                  <span className="text-gray-500">Cancelar</span>
+                  <span className="text-gray-500">{cancelButton}</span>
                 </button>
                 <button
                   type="submit"
@@ -98,7 +100,7 @@ export function DateRangePicker({
                   className="ml-auto"
                   disabled={checkOutOfMaxRange(range, maxRange)}
                 >
-                  <span className="text-gray-500">Aplicar</span>
+                  <span className="text-gray-500">{applyButton}</span>
                 </button>
               </div>
             </div>
