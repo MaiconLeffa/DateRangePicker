@@ -6,6 +6,7 @@ const tailwindConfig = require("./tailwind.config.js");
 
 const config = {
   input: "./index.tsx",
+  treeshake: true,
   output: [
     {
       file: pkg.main,
@@ -17,8 +18,8 @@ const config = {
     }
   ],
   external: [
-    ...Object.keys(pkg.dependencies || {}),
-    ...Object.keys(pkg.peerDependencies || {})
+    'tailwindcss/tailwind.css',
+    ...Object.keys(pkg.devDependencies || {}),
   ],
   plugins: [
     postcss({

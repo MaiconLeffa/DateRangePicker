@@ -1,6 +1,6 @@
 {
   "name": "@maiconleffa/date-range-picker",
-  "version": "1.2.2",
+  "version": "1.2.6",
   "description": "A components to get a range between two dates using a simple and friendly ui",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -38,7 +38,11 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.6.17",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "typescript": "^5.4.2",
+    "rollup": "^4.12.1",
+    "rollup-plugin-typescript2": "^0.36.0"
   },
   "repository": {
     "type": "git",
@@ -47,11 +51,5 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  },
-  "dependencies": {
-    "rollup": "^4.12.1",
-    "rollup-plugin-postcss": "^4.0.2",
-    "rollup-plugin-typescript2": "^0.36.0",
-    "typescript": "^5.4.2"
   }
 }
