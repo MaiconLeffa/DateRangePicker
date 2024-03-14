@@ -1,11 +1,11 @@
 # DateRangePicker
 
-DateRangePicker is a simple component to get a range of dates, it return start date and end date.
+DateRangePicker is a simple component to get a range of dates, it returns start date and end date.
 
 ![Captura de Tela 2024-03-13 às 21 17 08](https://github.com/MaiconLeffa/DateRangePicker/assets/41764184/84db1125-1a85-4c20-b4ef-1df0b93f42a1)
 
 ```jsx
-import { DateRangePicker } from "maicon-leffa-date-range-picker";
+import { DateRangePicker } from "@maiconleffa/date-range-picker";
 
 export function Demo() {
   function handleChange(dateRange) {
