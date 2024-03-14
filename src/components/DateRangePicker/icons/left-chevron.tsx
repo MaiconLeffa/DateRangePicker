@@ -1,6 +1,8 @@
-import React from "react";
+import React, { SVGProps } from "react";
 
-export function LeftIcon(props) {
+interface LeftIconProps extends SVGProps<SVGSVGElement> {}
+
+export function LeftIcon(props: LeftIconProps) {
   return (
     <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" {...props}>
       <path

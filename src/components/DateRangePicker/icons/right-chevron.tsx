@@ -1,6 +1,8 @@
-import React from "react";
+import React, { SVGProps } from "react";
 
-export function RightIcon(props) {
+interface RightIconProps extends SVGProps<SVGSVGElement> {}
+
+export function RightIcon(props: RightIconProps) {
   return (
     <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" {...props}>
       <path
