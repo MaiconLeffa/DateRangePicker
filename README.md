@@ -28,6 +28,9 @@ Props
 | maxRange | 366 | The amount of days in between two dates that user can select |
 | value | null | The current value of the component |
 | waitForApply | true | If true onChange event is trigger only when apply button is pressed |
+| applyButton | 'Apply' | Text inside apply button |
+| cancelButton | 'Cancel' | Text inside cancel button |
+
 
 onChange
 {
